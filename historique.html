@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>The Elder Scrolls</title>
+	</head>
+	
+	<body>
+	    <div id="sideMenu" class="side-menu">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	        <a href="cquoi.html">C'est quoi ?</a>
+	        <a href="presentation.html">Lore</a>
+	        <a href="races.html">Races</a>
+	        <a href="historique.html">Historique</a>
+	        <a href="biblio.html">Bibliographie</a>
+	    </div>		
+	    <button class="openbtn" onclick="openMenu()">&#9776; </button>
+    	<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+	    <script src="side_menu.js"></script>
+
+		<div class="header">
+			<div class="titre"> <a class="retour_menu" href="menu.html">The Elder Scrolls</a></div>
+			
+			<div id="rubrique">
+				<div class="boutonMenu"><a class="menu" href="cquoi.html">C'est quoi ?</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="presentation.html">Lore</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="presentation.html">Présentation succinte</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="intrigue.html">Intrigue</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="source.html">Sources et influences</a>
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="races.html"> Races </a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #elfe">Elfes</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #humain">Humains</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #animal">Peuple animal</a><br />
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="historique.html"> Historique</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="biblio.html"> Bibliographie</a><br /></div>
+			</div>
+		</div>
+		
+		<div class="contenu">
+			<div class="arbo">
+				<a class="arbo" href="menu.html"> Menu </a> > 
+				<a class="arbo" href="lore.html"> Historique </a>
+			</div>
+			<h1> Série principale : </h1>
+			
+				<table>
+				   <thead> <!-- En-tête du tableau -->
+					   <tr>
+						   <th> Titre du jeu </th>
+						   <th> Année de sortie </th>
+						   <th> Support de sortie </th>
+					   </tr>
+				   </thead>
+
+				   <tbody> <!-- Corps du tableau -->
+					   <tr>
+
+						   <td> The Elder Scrolls : Arena </td>
+						   <td> 1994 </td>
+						   <td> PC </td>
+
+					   </tr>
+					   <tr>
+						   <td> The Elder Scrolls II : Daggerfall </td>
+						   <td> 1996 </td>
+						   <td> PC </td>
+
+					   </tr>
+					   <tr>
+						   <td> The Elder Scrolls III : Morrowind </td>
+						   <td> 2002 </td>
+						   <td> PC, XBOX </td>
+					   </tr>
+					   <tr>
+						   <td> The Elder Scrolls IV : Oblivion </td>
+						   <td> 2006 </td>
+						   <td> PC, XBOX 360, PS3 </td>
+					   </tr>
+					   <tr>
+						   <td> The Elder Scrolls V : Skyrim </td>
+						   <td> 2011 </td>
+						   <td> PC, XBOX 360, PS3 </td>
+					   </tr>
+				   </tbody>
+				</table>
+				<br/>
+			<hr/>
+			<h1> Hors série :</h1>
+				<table>
+				   <thead> <!-- En-tête du tableau -->
+					   <tr>
+						   <th> Titre du jeu </th>
+						   <th> Année de sortie </th>
+						   <th> Support de sortie </th>
+					   </tr>
+				   </thead>
+
+				   <tbody> <!-- Corps du tableau -->
+					   <tr>
+
+						   <td>An Elder Scrolls Legend: Battlespire </td>
+						   <td> 1997 </td>
+						   <td> PC </td>
+
+					   </tr>
+					   <tr>
+						   <td> The Elder Scrolls Adventures: Redguard </td>
+						   <td> 1998 </td>
+						   <td> PC </td>
+
+					   </tr>
+					   <tr>
+						   <td> The Elder Scrolls Online </td>
+						   <td> 2014 </td>
+						   <td> PC, XBOX One, PS4 </td>
+					   </tr>
+					   <tr>
+						   <td> The Elder Scrolls: Legends </td>
+						   <td> 2017 </td>
+						   <td> Android, iOS, Microsoft Windows, Mac OS </td>
+					   </tr>
+				   </tbody>
+				</table>			
+			<br/>
+		<hr/>
+		<div>
+			<h1 id="en_savoir_plus" class="ancre"> En savoir plus </h1>		
+			<iframe width="420" height="315" src="https://youtube.com/embed/BA3mWUEH_7o">
+			</iframe> 
+		</div>			
+		</div>
+		
+
+		
+		<footer> 
+			<div id="footer"></div>
+		</footer>
+		<script src="footer.js"></script>		
+	</body>
+</html>

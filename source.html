@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>The Elder Scrolls</title>
+	</head>
+	
+	<body>
+	    <div id="sideMenu" class="side-menu">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	        <a href="cquoi.html">C'est quoi ?</a>
+	        <a href="presentation.html">Lore</a>
+	        <a href="races.html">Races</a>
+	        <a href="historique.html">Historique</a>
+	        <a href="biblio.html">Bibliographie</a>
+	    </div>		
+	    <button class="openbtn" onclick="openMenu()">&#9776; </button>
+    	<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+	    <script src="side_menu.js"></script>		
+
+		<div class="header">
+			<div class="titre"> <a class="retour_menu" href="menu.html">The Elder Scrolls</a></div>
+			
+			<div id="rubrique">
+				<div class="boutonMenu"><a class="menu" href="cquoi.html">C'est quoi ?</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="presentation.html">Lore</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="presentation.html">Présentation succinte</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="intrigue.html">Intrigue</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="source.html">Sources et influences</a>
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="races.html"> Races </a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #elfe">Elfes</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #humain">Humains</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #animal">Peuple animal</a><br />
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="historique.html"> Historique</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="biblio.html"> Bibliographie</a><br /></div>
+			</div>
+		</div>
+		
+		<div class="contenu">
+			<div class="arbo">
+				<a class="arbo" href="menu.html"> Menu </a> > 
+				<a class="arbo" href="lore.html"> Lore </a> > 
+				<a class="arbo" href="presentation.html"> Présentation </a>
+			</div>
+			<br/>
+			<div>
+				<a class="page_precedente" href="intrigue.html"><< Page précédente <<</a>
+			</div>			
+			<h2> Sources et influences </h2>
+			<p> Alimenté par des dizaines d'auteurs, chacun avec son propre parcours et sa propre culture 
+			scientifique, littéraire ou ludique, l'univers de The Elder Scrolls bénéficie de nombreuses 
+			influences d'origines diverses.</p>
+			<p> Les premières influences, visibles dans Arena et Daggerfall, sont celles de Dungeons & Dragons, 
+			de la série des Ultima ou encore de Vampire : la Mascarade pour les vampires. Les jeux prennent 
+			place dans un univers heroic fantasy classique, reprenant une table de monstres héritée de 
+			l'antiquité (minotaures, centaures, lamias...) ou de D&D (gobelins, orques, dragons, liches...). 
+			De même, les elfes vivent dans les arbres, les elfes noirs sont nommés Dunmer. </p>
+
+			
+			
+			<p> Avec le premier hors-série, Battlespire, l'univers entre dans la space fantasy. La majeure partie 
+			du jeu se déroule dans une sorte de vaisseau-forteresse lévitant dans l'espace. Beaucoup d'éléments du 
+			décor reprennent une esthétique typique de la space fantasy, avec beaucoup de métal et des panneaux de 
+			contrôles, certes rustiques. C'est un tournant majeur dans la série, qui n'est pas attribué à un 
+			développeur en particulier. </p>
+			
+			<p> Le second hors-série, Redguard, a été conçu par Michael Kirkbride et Kurt Kuhlmann. À l'origine 
+			dissocié de The Elder Scrolls, le jeu devait se dérouler dans une planète géante gazeuse, où le 
+			joueur incarne un pirate-aventurier qui aurait affaire à divers peuples inspirés de l'Antiquité, 
+			tels que les Étrusques, les Mèdes ou encore des taureaux babyloniens. C'est Todd Howard et Julian Lefay 
+			qui proposèrent à Michael et Kurt de transposer ce jeu dans l'univers de TES. C'est notamment ce qui a 
+			donné un caractère babylonien aux Dwemers et un côté romain à l'Empire de Cyrodiil. </p>
+			
+			<p> Morrowind a intégré l'influence de deux développeurs en particulier : Ken Rolston et Michael 
+			Kirkbride. Ken Rolston, fan de Glorantha, s'en est inspiré pour les jeux TES, renforçant les 
+			références à l'Antiquité, et apportant une esthétique colorée et magique. De son côté Michael Kirkbride 
+			cite Mad Max, Dark Crystal ou encore Star Wars. Par exemple, le planétaire dwemer est directement inspiré 
+			du planétaire d'Aughra dans Dark Crystal, les Échassiers des Marais (Silt Strider en anglais) proviennent 
+			des Land Strider de Dark Crystal et l'armure de la Maison Rédoran est inspirée de celle des Mandaloriens 
+			de Star Wars. </p>
+			
+			<div class="polaroid">
+				<img id="img" class="armure" src="image/armure_manda_redoran.png" alt="Armure mandalorienne dans l'univers de Star Wars, inspiration de l'armure rédoran."/>
+				<div class="desc_img">
+					Armure mandalorienne dans l'univers de Star Wars, inspiration de l'armure rédoran.
+				</div>
+			</div>
+			
+			<p> Oblivion délaisse la space fantasy pour renouer avec les classiques de la fantasy médiévale 
+			de J. R. R. Tolkien. L'influence de Glorantha y est plus discrète, sans toutefois disparaître.</p>
+			
+			<p> Skyrim propose un univers de dark fantasy, qui se veut à la fois sombre et réaliste. La province 
+			de Bordeciel est directement inspirée des mythologies scandinaves, mais comporte aussi quelques influences 
+			orientales, tibétaines notamment, avec la faction des Grises-Barbes et le temple de Havreciel.</p>
+			
+			<p> Les TES incorporent beaucoup d'éléments du monde réel. Notamment la province de Morrowind qui est 
+			inspirée par l’Égypte ancienne, le Moyen-Orient et le Japon de l'Époque Ancienne. L'architecture 
+			brétonne rappelle celle de l'ancienne Angleterre et l'architecture Rougegarde celle des Empires Arabes. 
+			L'Empire de Cyrodiil est inspiré de l'Empire romain.</p>
+
+			<div class="polaroid">
+				<img id="img" class="armure" src="image/armure_romaine_impériale.png" alt="Armure de l'époque romaine (gauche) et une armure impériale dans The Elder Scrolls V : Skyrim (droite)"/>
+				<div class="desc_img">
+					Armure de l'époque romaine (gauche) et une armure impériale dans The Elder Scrolls V : Skyrim (droite)
+				</div>
+			</div>
+
+			<p> Des parallèles entre certains aspects mythologiques de The Elder Scrolls et les diverses formes 
+			d'expression spirituelles de la Terre sont également établis. Le dieu Vivec, l'Androgyne, est inspiré 
+			par exemple d'Ardhanari, l'aspect androgyne de Shiva. De même, le concept temporel de Kalpa existe 
+			dans la mythologie des TES comme dans l'Hindouisme - même si la signification du terme est sensiblement 
+			différente dans les deux cas. </p>
+			
+			<div>
+				<a class="page_precedente" href="intrigue.html"><< Page précédente <<</a>
+			</div>
+
+			<!-- Image zoomée -->
+			<div id="myModal" class="modal">
+				<img class="modal-content" id="img01">
+			<div id="caption"></div>
+			</div>
+			<script src="zoom.js"></script>		
+			
+		</div>
+		<footer> 
+			<div id="footer"></div>
+		</footer>
+		<script src="footer.js"></script>		
+	</body>
+</html>

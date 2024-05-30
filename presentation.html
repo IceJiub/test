@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>The Elder Scrolls</title>
+	</head>
+	
+	<body>
+
+	    <div id="sideMenu" class="side-menu">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	        <a href="cquoi.html">C'est quoi ?</a>
+	        <a href="lore.html">Lore</a>
+	        <a href="races.html">Races</a>
+	        <a href="historique.html">Historique</a>
+	        <a href="biblio.html">Bibliographie</a>
+	    </div>
+
+	    <button class="openbtn" onclick="openMenu()">&#9776; </button>
+    	<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+	    <script src="side_menu.js"></script>
+
+		<div id="header" class="header">
+			<div class="titre">
+				<a class="retour_menu" href="menu.html"> The Elder Scrolls</a>
+			</div>
+			<div id="rubrique">
+				<div class="boutonMenu"><a class="menu" href="cquoi.html">C'est quoi ?</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="lore.html">Lore</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="presentation.html">Présentation succinte</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="intrigue.html">Intrigue</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="source.html">Sources et influences</a>
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="races.html"> Races </a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #elfe">Elfes</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #humain">Humains</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #animal">Peuple animal</a><br />
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="historique.html"> Historique</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="biblio.html"> Bibliographie</a><br /></div>
+			</div>
+		</div>
+		<div class="contenu">
+			<div class="arbo">
+				<a class="arbo" href="menu.html"> Menu </a> >
+				<a class="arbo" href="lore.html"> Lore </a> >
+				<a class="arbo" href="presentation.html"> Présentation </a>
+			</div>
+			<br/>
+			<div class="navigation">
+				<a class="page_suivante" href="intrigue.html">>> Page suivante >></a>
+			</div>
+			<h2> Présentation succinte </h2>
+			<p> Les jeux The Elder Scrolls se situent dans un univers de fantasy généraliste qui puise dans les 
+			différents registres du genre. </p>
+			<p> À quelques exceptions près, toute l'histoire se déroule sur la planète Nirn, et plus précisément 
+			le continent de Tamriel. Ce continent est habité par une vingtaine d'espèces, qui sont d'origine humaine, 
+			elfique ou animale. Le continent est réparti entre diverses puissances locales, représentées par des 
+			provinces. Deux de ces puissances ont profondément marqué l'histoire de Tamriel : l'Empire de Cyrodiil, 
+			un empire humain, et le Domaine Aldmeri, une fédération elfique. Chacun de ces deux ensembles est à 
+			de nombreuses reprises détruit, pour renaître de ses cendres des années ou des siècles plus tard. 
+			Ainsi, à l'époque de Skyrim (en français Bordeciel), Tamriel est divisé entre le Quatrième Empire de Cyrodiil et le Troisième 
+			Domaine Aldmeri, les deux super-puissances étant dans un état de guerre froide. </p>
+
+			<!-- Image affichée -->   
+			<div class="polaroid">
+				<img id="img" class="lore ancre" src="image/Map_tamriel.jpg" alt="La saga The Elder Scrolls se déroule en grande partie sur le continent de Tamriel"/>
+				<div class="desc_img">
+					La saga The Elder Scrolls se déroule en grande partie sur le continent de Tamriel.
+				</div>
+			</div>
+			
+			<!-- Image zoomée -->
+			<div id="myModal" class="modal">
+				<img class="modal-content" id="img01">
+			<div id="caption"></div>
+			</div>
+	
+			<script src="zoom.js"></script>
+
+			<p> Il existe bien entendu d'autres continents ou îles isolées, ainsi que d'autres planètes, des 
+			lunes ou encore des plans spirituels où résident les dieux, et qui peuvent abriter en partie les 
+			aventures proposées par les jeux. </p>
+			<p> Il est à noter que dans les TES, au contraire d'autres univers, les dieux ne sont pas des concepts 
+			abstraits ou des entités rarement visibles. Il arrive régulièrement de voir ces derniers s'incarner dans 
+			le monde mortel, ou tenter de l'envahir. Les très nombreuses sectes et églises agissent comme des entités 
+			politiques. Il existe même des « dieux vivants », c'est-à-dire des dieux qui habitent le monde des 
+			mortels et en contrôlent certains territoires.. </p>
+			<hr/>
+			<div>
+				<h1 class="ancre"> En savoir plus </h1>		
+				<iframe id="video" src="https://youtube.com/embed/bs4StVK07GQ">
+				</iframe> 
+			</div>
+			<br/>
+			<div>
+				<a class="page_suivante" href="intrigue.html">>> Page suivante >></a>
+			</div>
+		</div>
+		<footer> 
+			<div id="footer"></div>
+		</footer>
+		<script src="footer.js"></script>	
+	</body>
+</html>

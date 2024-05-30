@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>The Elder Scrolls</title>
+	</head>
+	
+	<body>
+	    <div id="sideMenu" class="side-menu">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	        <a href="cquoi.html">C'est quoi ?</a>
+	        <a href="presentation.html">Lore</a>
+	        <a href="races.html">Races</a>
+	        <a href="historique.html">Historique</a>
+	        <a href="biblio.html">Bibliographie</a>
+	    </div>
+
+	    <button class="openbtn" onclick="openMenu()">&#9776; </button>
+    	<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+	    <script src="side_menu.js"></script>
+		<div class="header">
+			<div class="titre"> <a class="retour_menu" href="menu.html">The Elder Scrolls</a></div>
+			
+			<div id="rubrique">
+				<div class="boutonMenu"><a class="menu" href="cquoi.html">C'est quoi ?</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="presentation.html">Lore</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="presentation.html">Présentation succinte</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="intrigue.html">Intrigue</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="source.html">Sources et influences</a>
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="races.html"> Races </a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #elfe">Elfes</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #humain">Humains</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #animal">Peuple animal</a><br />
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="historique.html"> Historique</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="biblio.html"> Bibliographie</a><br /></div>
+			</div>
+			<div class="socials">
+				<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img class="fb" src="image/fb.png"/></a></div>
+			</div>
+		</div>
+		
+		
+		<div class="contenu">
+			<div class="arbo">
+				<a class="arbo" href="menu.html"> Menu </a> > 
+			</div>
+			<p> Bienvenue sur notre site ! </p>
+			
+			<h1> Actualités </h1>
+			<p> 
+				<ul class="news">
+
+					<li><span class="date_news"> 03/10/2017</span> : 
+						<a target="_blank" href="https://gamewave.fr/the-elder-scrolls-6/pete-hines-parle-de-l-attente-autour-de-the-elder-scrolls-6/">
+						Pete Hines parle de l'attente autour de The Elder Scrolls 6 !</a> de Florian Lelong, pour Gamewave
+					</li>		
+					<br/>
+					<li><span class="date_news"> 28/09/2017</span> : 
+						<a target="_blank" href="http://www.gameblog.fr/news/70875-skyrim-la-faim-et-le-froid-au-programme-du-mode-survie">
+						Skyrim : La faim et le froid au programme du mode Survie</a> de Thomas Pillon, pour Gameblog
+					</li>
+					<br/>
+					<li><span class="date_news"> 13/06/2017</span> : 
+						<a target="_blank" href="http://gaming.gentside.com/the-elder-scrolls-6/the-elder-scrolls-vi-date-de-sortie-news-prix-et-astuces-du-prochain-jeu-de-bethesda_art16715.html">
+						The Elder Scrolls VI : date de sortie, news, prix et astuces du prochain jeu de Bethesda</a> de Emmanuel Perrin, pour Gaming Gentside
+					</li>	
+					<br/>
+					<li><span class="date_news"> 09/06/2017</span> : 
+						<a target="_blank" href="https://www.gamekult.com/jeux/the-elder-scrolls-online-morrowind-3050849223/test.html">
+						The Elder Scrolls Online, retour à Morrowind</a> de Nerces, pour Gamekult
+					</li>
+					<br/>
+					<li><span class="date_news"> 14/10/2016</span> : 
+						<a target="_blank" href="http://hitek.fr/actualite/elder-scrolls-vi-bethesda-informations-developpement_10946">
+						Elder Scrolls : Bethesda nous donne quelques informations concernant son développement</a> de Mickaël, pour Hitek
+					</li>	
+					<br/>
+				</ul>
+			</p>
+
+		</div>
+		<footer>
+			<div class="footer"><h1> Tom Yang </h1>Tom Yang ...</div>
+		</footer>
+<!-- 		<footer> 
+			<div id="footer"></div>
+		</footer>
+		<script src="footer.js"></script>		 -->
+	</body>
+</html>

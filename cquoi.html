@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>The Elder Scrolls</title>
+	</head>
+	
+	<body>
+	    <div id="sideMenu" class="side-menu">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	        <a href="cquoi.html">C'est quoi ?</a>
+	        <a href="presentation.html">Lore</a>
+	        <a href="races.html">Races</a>
+	        <a href="historique.html">Historique</a>
+	        <a href="biblio.html">Bibliographie</a>
+	    </div>		
+	    <button class="openbtn" onclick="openMenu()">&#9776; </button>
+    	<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+	    <script src="side_menu.js"></script>
+
+		<div class="header">
+			<div class="titre"> <a class="retour_menu" href="menu.html">The Elder Scrolls</a></div>
+			
+			<div id="rubrique">
+				<div class="boutonMenu"><a class="menu" href="cquoi.html">C'est quoi ?</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="presentation.html">Lore</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="presentation.html">Présentation succinte</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="intrigue.html">Intrigue</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="source.html">Sources et influences</a>
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="races.html"> Races </a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #elfe">Elfes</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #humain">Humains</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #animal">Peuple animal</a><br />
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="historique.html"> Historique</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="biblio.html"> Bibliographie</a><br /></div>
+			</div>
+		</div>
+		
+		<div class="contenu">
+			<div>
+				<div class="arbo">
+					<a class="arbo" href="menu.html"> Menu </a> > 
+					<a class="arbo" href="cquoi.html"> C'est quoi ? </a>
+				</div>
+			
+			<p> L'univers de The Elder Scrolls est le fruit de l'imagination de trois membres de Bethesda Softworks : 
+			Ted Peterson, Julian Lefay et Vijay Lakshman. À l'origine The Elder Scrolls a été conçu comme un jeu de rôle 
+			papier, sur table. Il fut décidé de l'adapter pour ordinateur. Les premiers jeux de la série présentaient donc 
+			une mécanique très similaire à celle des jeux de rôle papier. Cette approche fut finalement abandonnée. Le 
+			parallélisme avec les jeux sur table s'est perdu, mais la liberté, elle, est restée. </p>
+			<p> L'une des caractéristiques essentielles des jeux The Elder Scrolls est de proposer un monde ouvert, 
+			c'est-à-dire un environnement où le joueur décide quand, comment et dans quel ordre il explore le monde 
+			qui l'entoure et exécute les quêtes qui lui sont proposées. La série fut pionnière dans ce domaine, aux 
+			côtés de la série des Ultima ou encore celle de Elite. </p>
+			<p> Les jeux The Elder Scrolls sont pionniers d'un système de progression unique dans le milieu des jeux de 
+			rôle, inspiré de RuneQuest, il n'existe pas de système d'expérience avec l'acquisition de « points d'XP » 
+			comme dans la plupart des jeux de ce type, dans lesquels les points d'expérience débloquent des compétences 
+			pour le personnage. Dans les TES, cette logique est inversée : plus une compétence est utilisée, plus elle 
+			est améliorée, en outre, le niveau des compétences détermine le niveau du personnage. </p>
+			</div>
+		</div>
+		<footer> 
+			<div id="footer"></div>
+		</footer>
+		<script src="footer.js"></script>		
+	</body>
+</html>
+
+

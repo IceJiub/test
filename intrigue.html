@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>The Elder Scrolls</title>
+	</head>
+	
+	<body>
+	    <div id="sideMenu" class="side-menu">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	        <a href="cquoi.html">C'est quoi ?</a>
+	        <a href="presentation.html">Lore</a>
+	        <a href="races.html">Races</a>
+	        <a href="historique.html">Historique</a>
+	        <a href="biblio.html">Bibliographie</a>
+	    </div>
+
+	    <button class="openbtn" onclick="openMenu()">&#9776; </button>
+    	<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+	    <script src="side_menu.js"></script>		
+		<div class="header">
+			<div class="titre"> <a class="retour_menu" href="menu.html">The Elder Scrolls</a></div>
+			
+			<div id="rubrique">
+				<div class="boutonMenu"><a class="menu" href="cquoi.html">C'est quoi ?</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="presentation.html">Lore</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="presentation.html">Présentation succinte</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="intrigue.html">Intrigue</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="source.html">Sources et influences</a>
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="races.html"> Races </a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #elfe">Elfes</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #humain">Humains</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #animal">Peuple animal</a><br />
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="historique.html"> Historique</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="biblio.html"> Bibliographie</a><br /></div>
+			</div>
+		</div>
+		
+		<div class="contenu">
+			<div class="arbo">
+				<a class="arbo" href="menu.html"> Menu </a> > 
+				<a class="arbo" href="lore.html"> Lore </a> > 
+				<a class="arbo" href="intrigue.html"> Intrigue </a>
+			</div>
+			<br/>
+			<div>
+				<a class="page_precedente" href="presentation.html"> << Page précédente << </a>
+				<a class="page_suivante" href="source.html"> >> Page suivante >> </a>
+			</div>			
+			<h2> Intrigue </h2>
+			<p> À l'origine, la série The Elder Scrolls devait raconter en quatre épisodes la chute d'un empire, 
+			le Troisième Empire de Cyrodiil. Effectivement, d'Arena à Morrowind l'histoire suit le règne de l'Empereur 
+			Uriel Septim VII. Dans Oblivion, le quatrième épisode, il est assassiné, ainsi que tous ses héritiers, 
+			marquant la fin de la lignée impériale. Le joueur assiste dans le jeu au déclin de cet Empire, vu depuis 
+			la province de Cyrodiil, la province impériale. Les deux romans La Cité infernale et Le Seigneur des âmes 
+			de l'écrivain américain Gregory Keyes, ainsi que certains passages de Skyrim, expliquent l'agonie du 
+			Troisième Empire en lambeaux après les évènements survenus dans Oblivion. </p>
+			<p> Dans Morrowind, sous l'impulsion de Michael Kirkbride, et à un moindre degré de Kurt Kuhlmann et 
+			Gary Noonan, débute une seconde intrigue, plus obscure, et filée entre les épisodes. Dans cet 
+			environnement plus ésotérique, l'ensemble de l'univers de The Elder Scrolls est le rêve éternel 
+			d'un dieu, le Godhead. À l'origine l'univers n'est peuplé que d'esprits immortels. Certains de ces 
+			esprits, les Daedra, et Lorkhan prennent conscience qu'ils vivent dans un rêve, et décident 
+			d'en sortir, pour accéder à une existence autonome. Lorkhan crée Nirn, le monde mortel. La mortalité 
+			est l'un des moyens pour sortir du rêve. </p>
+			<p> D'autres esprits, les Aedra, ne comprennent pas ce concept de rêve, le nient, ou préfèrent y rester. 
+			Parmi eux, Auri-El entre en conflit ouvert avec Lorkhan. </p>
+			<p> L'ensemble de la série illustre le conflit entre Lorkhan et Auri-El, et se place généralement du côté 
+			de Lorkhan. Ainsi, dans Morrowind, le héros libère le Cœur de Lorkhan qui était prisonnier. En revanche, 
+			dans Skyrim, le joueur affronte Alduin, un dieu assimilé à Akatosh par les nordiques, mais dont les ambitions 
+			rejoindraient celles d'Auri-El, de certaines factions extrémistes du Thalmor et potentiellement celles 
+			d'anciennes civilisations elfiques tels que l'Ayledoon : le retour au statut de pur esprit par la 
+			destruction de Nirn. Ainsi, il est difficile de l'identifier avec certitude à Auri-El, ou Akatosh, 
+			rendant plus confus encore le point de vue adopté dans cet épisode. </p>
+
+			<!-- Image affichée -->   			
+			<div class="polaroid">
+				<img id= "img" class="armure" src="image/alduin.png" alt="Aluin, l'antagoniste que le joueur affronte dans The Elder Scrolls : Skyrim."/>
+				<div class="desc_img">
+					Aluin, l'antagoniste que le joueur affronte dans The Elder Scrolls : Skyrim.
+				</div>
+			</div>
+			
+			<!-- Image zoomée -->
+			<div id="myModal" class="modal">
+				<img class="modal-content" id="img01">
+			<div id="caption"></div>
+			</div>
+			<script src="zoom.js"></script>			
+
+			<p> La plupart des nombreuses entités politiques et divinités de l'univers présentent un positionnement 
+			vis-à-vis de Lorkhan et d'Auri-El ; par exemple, l'Empire de Cyrodiil est aligné sur Lorkhan, et le 
+			Domaine Aldmeri sur Auri-El. Les partisans de Lorkhan défendent la liberté et l'autonomie, tandis que 
+			ceux d'Auri-El ambitionnent l'immortalité et l'éternité ; ces deux orientations antagonistes sont appelées 
+			respectivement le « changement » et la « stase ». </p>
+	
+			<div>
+				<a class="page_precedente" href="presentation.html"> << Page précédente << </a>
+				<a class="page_suivante" href="source.html"> >> Page suivante >> </a>
+			</div>
+		</div>
+		<footer> 
+			<div id="footer"></div>
+		</footer>
+		<script src="footer.js"></script>		
+	</body>
+</html>

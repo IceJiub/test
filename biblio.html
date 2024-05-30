@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>The Elder Scrolls</title>
+	</head>
+	
+	<body>
+	    <div id="sideMenu" class="side-menu">
+	        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	        <a href="cquoi.html">C'est quoi ?</a>
+	        <a href="presentation.html">Lore</a>
+	        <a href="races.html">Races</a>
+	        <a href="historique.html">Historique</a>
+	        <a href="biblio.html">Bibliographie</a>
+	    </div>		
+	    <button class="openbtn" onclick="openMenu()">&#9776; </button>
+    	<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+	    <script src="side_menu.js"></script>
+
+		<div class="header">
+			<div class="titre"> <a class="retour_menu" href="menu.html">The Elder Scrolls</a></div>
+			
+			<div id="rubrique">
+				<div class="boutonMenu"><a class="menu" href="cquoi.html">C'est quoi ?</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="presentation.html">Lore</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="presentation.html">Présentation succinte</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="intrigue.html">Intrigue</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="source.html">Sources et influences</a>
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="races.html"> Races </a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #elfe">Elfes</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #humain">Humains</a><br />
+					<hr/>
+					<a class="menu sousMenu" href="races.html #animal">Peuple animal</a><br />
+					<hr/>
+				</div>
+				<div class="boutonMenu"><a class="menu" href="historique.html"> Historique</a><br /></div>
+				<div class="boutonMenu"><a class="menu" href="biblio.html"> Bibliographie</a><br /></div>
+			</div>
+		</div>
+		
+		<div class="contenu">
+			<div class="arbo">
+				<a class="arbo" href="menu.html"> Menu </a> > 
+				<a class="arbo" href="lore.html"> Bibliographie </a>
+			</div>
+			<ul>
+
+				<li><a href="http://en.uesp.net/wiki/Main_Page" target="_blank">« The Unofficiel Elder Scrolls Pages »  </a> (vu le 20/10/17)</li>
+				<li><a href="https://www.w3schools.com/" target="_blank">« W3Schools Online Web Tutorials » </a> (vu le 17/09/17)</li>
+				<li><a href="http://lagbt.wiwiland.net" target="_blank">La Grande Bibliothèque de Tamriel </a> (vu le 20/10/17)</li>
+				<li><a href="http://www.rpgcodex.net/forums/index.php?threads/interview-critical-of-bethesda-rubbed-out.10403/#post-172709" target="_blank"> « Interview of Douglas Goodall » </a> sur sur RPG Codex (vu le 20/10/17)</li>
+				<li>Michael Kirkbride, <a href="http://michaelkirkbride.tumblr.com/post/75209683641/ive-wondered-about-the-inspiration-andor-origin">  « Inspiration of Redoran Armor » </a> sur Tumblr de Michael Kirkbride (vu le 10/10/17) </li>
+				<li><a href="https://www.imperial-library.info/content/interviews-MW-team"> « Interview With Morrowind's Developers » </a> sur The Imperial Library (vu le 10/10/17) </li>
+				<li>Michael Kirkbride, <a href="http://monkeytruth.net/forum/index.php?PHPSESSID=71b7844ff81f79a4d4cd4ebb8759e499&topic=24.msg163#msg163" target="_blank"> « Emotional impact, emotional response »</a> sur Temple Zero Society (lien mort)</li>
+
+			
+			
+			
+			</ul>
+		</div>
+		<footer> 
+			<div id="footer"></div>
+		</footer>
+		<script src="footer.js"></script>		
+	</body>
+</html>
